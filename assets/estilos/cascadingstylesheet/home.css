@@ -1,0 +1,53 @@
+/* @import url('style.css');
+@import url('animacoes.css'); */
+#home{
+    background: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#home img{
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    display: block;
+    animation: direitaParaEsquerda 1s;
+}
+.texto-home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0 0 0;
+    animation: esquerdaParaDireita 1s;
+}
+#home h1{
+    font-size: calc(1.5rem + 1vw);
+    margin: 1rem 0;
+}
+#home p{
+    font-size: calc(1rem + 0.5vw);
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    #home{
+        grid-template-columns: 1fr;
+        padding: 1.6rem 0 0 0;
+    }
+    #home img{
+        animation: mobileEsquerdaParaDireita 1s;
+    }
+    .texto-home{
+        padding: 2rem;
+        animation: mobileDireitaParaEsquerda 1s;
+    }
+}
+
+
+

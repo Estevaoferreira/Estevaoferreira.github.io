@@ -1,0 +1,78 @@
+/* @import url('style.css'); */
+
+/* 
+    #####    #######   #####   ###  ##  ######    #####   ######
+     ## ##    ##   #  ##   ##   ##  ##  # ## #   ##   ##   ##  ##
+     ##  ##   ## #    #         ## ##     ##     ##   ##   ##  ##
+     ##  ##   ####     #####    ####      ##     ##   ##   #####
+     ##  ##   ## #         ##   ## ##     ##     ##   ##   ##
+     ## ##    ##   #  ##   ##   ##  ##    ##     ##   ##   ##
+    #####    #######   #####   ###  ##   ####     #####   ####
+*/
+
+/* Essa animação faz o objeto vir de fora para dentro da tela */
+@keyframes esquerdaParaDireita {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%) rotate(-10deg);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Essa animação faz o objeto vir de fora para dentro (da esquerda para direita) e vir girando */
+@keyframes direitaParaEsquerda {
+    0% {
+        opacity: 0;
+        transform: translateX(+100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0) rotate(0);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/*  ##   ##   #####   ######    ####    ####     #######
+    ### ###  ##   ##   ##  ##    ##      ##       ##   #
+    #######  ##   ##   ##  ##    ##      ##       ## #
+    #######  ##   ##   #####     ##      ##       ####
+    ## # ##  ##   ##   ##  ##    ##      ##   #   ## #
+    ##   ##  ##   ##   ##  ##    ##      ##  ##   ##   #
+    ##   ##   #####   ######    ####    #######  #######  */
+
+/* Essa animação faz o objeto vir de fora para dentro da tela */
+@keyframes mobileEsquerdaParaDireita {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Essa animação faz o objeto vir de fora para dentro (da esquerda para direita) e vir girando */
+@keyframes mobileDireitaParaEsquerda {
+    0% {
+        opacity: 0;
+        transform: translateX(+100%) rotate(90deg);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0) rotate(0);
+    }
+}

@@ -1,0 +1,41 @@
+/* Seção Contato */
+#contato {
+    padding: 4rem 1rem;
+    text-align: center;
+    background-color: var(--quaternary-color);
+}
+
+#contato h2 {
+    font-size: 3.8rem;
+    margin-bottom: 2rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.social-links a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+#contato  p {
+    font-size: 1.2rem;
+}
+.social-links i {
+    margin-right: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    #contato h2 {
+        font-size: 2rem;
+    }
+    #contato  p {
+        font-size: 1rem;
+    }
+    .social-links {
+        flex-direction: column;
+    }
+}

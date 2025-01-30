@@ -1,0 +1,45 @@
+/* Importações de arquivos css externos */
+@import url('menu.css');
+@import url('home.css');
+@import url('servicos.css');
+@import url('galeria.css');
+@import url('sobre.css');
+@import url('contato.css');
+@import url('wavedivider.css');
+:root {
+    --primary-color: #EC407A; /* Rosa Médio */
+    --secondary-color: #fdecf2; /* Rosa Pálido */
+    --tertiary-color: #FFD700; /* Dourado */
+    --quaternary-color: #F5F5F5; /* Cinza Claro */
+    --quinary-color: #FFFFFF; /* Branco */
+    --senary-color: #333333; /* Cinza Escuro */
+    --fonte-titulo: 'Montserrat', sans-serif;
+    --fonte-subtitulo: 'Cormorant', serif;
+    --fonte-texto: 'Oxygen', sans-serif;
+}
+
+
+/* Reset CSS */
+html {
+    scroll-behavior: smooth;
+    background-color: var(--quaternary-color);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos Globais */
+body {
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #000000;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+

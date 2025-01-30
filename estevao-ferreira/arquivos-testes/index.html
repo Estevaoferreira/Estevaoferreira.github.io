@@ -22,17 +22,17 @@
     <script src="https://kit.fontawesome.com/6e8500a4fb.js" crossorigin="anonymous"></script>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="assets/estilos/cascadingstylesheet/style.css">
+    <link rel="stylesheet" href="estilo.css">
     <link rel="stylesheet" href="https://use.typekit.net/aif7tpa.css">
 </head>
 
 
 <body>
     <!-- Menu tanto desktop quanto mobile -->
-    <input id="close-menu" class="close-menu" type="checkbox" aria-label="close menu" role="button" data-animation="aparecer">
-    <label class="close-menu-label" for="close-menu" title="close menu" data-animation="aparecer"></label>
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="close menu" role="button">
+    <label class="close-menu-label" for="close-menu" title="close menu"></label>
 
-
+    <section class="hidden" >
         <aside class="menu white-bg">
             <div class="main-content menu-content">
                 <nav>
@@ -46,36 +46,35 @@
                 </nav>
             </div>
         </aside>
+    </section>
 
 
     <!-- Seção onde fica um seja bem vindo e uma foto -->
-    <section id="home">
-        <div class="texto-home" data-animation="slide-in-left">
+    <section id="home" class="hidden">
+        <div class="texto-home" data-animation="fade-in">
             <h1>Bem-vindo ao Meu Portfólio</h1>
             <p>Desenvolvedor Web | Desenvolvedor aplicações | Professor</p>
         </div>
-        <div class="img-home" data-animation="slide-in-right">
+        <div class="img-home" data-animation="slide-in-left">
             <img src="https://github.com/estevaoferreira.png" alt="Foto de Estevão Ferreira o detentor do portfólio.">
         </div>
     </section>
 
     <!-- Seção onde conto sobre mim -->
-    <section id="sobre" class="hidden" >
-        <div class="container" >
-            <div data-animation="slide-in-left">
-                <h2>Sobre Mim</h2>
-            </div>
+    <section id="sobre">
+        <div class="container">
+            <h2>Sobre Mim</h2>
             <div class="sobre-content">
-                <div class="sobre-text" data-animation="zoom-in">
+                <div class="sobre-text">
                     <p>Olá! Eu sou Estevão, um apaixonado desenvolvedor web com experiência em criar sites modernos,
                         funcionais e visualmente atraentes. Adoro compartilhar meu conhecimento como professor e ajudar
                         meus alunos a crescerem em suas carreiras tecnológicas. Além disso, sou um entusiasta de música,
                         filmes e cultura, o que me inspira a criar designs criativos e inovadores. Vamos juntos
                         transformar suas ideias em realidade! Continue por aqui e veja meus trabalhos mais recentes</p>
                 </div>
-                <div class="sobre-img" data-animation="slide-in-right">  
+                <div class="sobre-img">
                     <img src="https://github.com/estevaoferreira.png"
-                        alt="Foto de Estevão Ferreira o detentor do portfólio." data-animation="zoom-in">
+                        alt="Foto de Estevão Ferreira o detentor do portfólio.">
                 </div>
             </div>
         </div>
@@ -84,11 +83,9 @@
     <!-- Seção dos meus trabalhos mais recentes -->
     <section id="portfolio" class="hidden">
         <div class="container">
-            <div data-animation="zoom-in">
-                <h2>Portfólio</h2>
-            </div>
+            <h2 class="fade-in">Portfólio</h2>
             <div class="portfolio-grid">
-                <div class="portfolio-item projeto-um" data-animation="slide-in-left">
+                <div class="portfolio-item projeto-um zoom-in">
                     <img src="assets/img/logoaesp.png"
                         alt="projeto desenvolvido para a associação de basquete 3x3 de jundiaí. Na capa vê-se a logo dessa associação">
                     <div class="portfolio-info">
@@ -97,7 +94,7 @@
                                 basquete 3x3</a></p>
                     </div>
                 </div>
-                <div class="portfolio-item projeto-dois" data-animation="slide-in-right">
+                <div class="portfolio-item projeto-dois zoom-in">
                     <img src="https://dralessandroanders.netlify.app/assets/img/logo.svg"
                         alt="projeto desenvolvido para o Doutor Alessandro Anders Ferreira. Projeto para apresentação pessoal do advogado e os serviços que ele presta. Na capa vê-se a logo do escritório desse Doutor">
                     <div class="portfolio-info">
@@ -106,7 +103,7 @@
                                 advogado</a></p>
                     </div>
                 </div>
-                <div class="portfolio-item projeto-dois" data-animation="slide-in-left">
+                <div class="portfolio-item projeto-dois zoom-in">
                     <img src="assets/img/estetica-rafaela.PNG"
                         alt="projeto desenvolvido para o Doutor Alessandro Anders Ferreira. Projeto para apresentação pessoal do advogado e os serviços que ele presta. Na capa vê-se a logo do escritório desse Doutor">
                     <div class="portfolio-info">
@@ -119,19 +116,20 @@
         </div>
     </section>
 
+
+
+
     <!-- Seção que fala os serviços que presto -->
     <section id="servicos" class="hidden">
         <div class="container">
-            <div data-animation="fade-in">
-                <h2>Serviços</h2>
-            </div>
+            <h2 class="fade-in">Serviços</h2>
             <div class="servicos-grid">
                 <div class="servico-item">
-                    <div class="servico-imagem" data-animation="slide-in-left">
+                    <div class="servico-imagem">
                         <img src="https://img.freepik.com/free-psd/kids-sport-social-media-template_23-2148253780.jpg?t=st=1719240978~exp=1719244578~hmac=ed89cd3041b934e5c5f670f148edafdf89c953c2626175328fd9a74c15bb7158&w=1800"
                             alt="Serviço 1">
                     </div>
-                    <div class="servico-descricao" data-animation="slide-in-right">
+                    <div class="servico-descricao">
                         <h3>Web Design com Desenvolvimento de Landing Pages Responsivas</h3>
                         <p>Transforme visitantes em clientes com designs envolventes e landing pages responsivas.
                             Criamos experiências digitais que capturam a atenção e convertem. Maximize o impacto da sua
@@ -142,7 +140,7 @@
                     </div>
                 </div>
                 <div class="servico-item">
-                    <div class="servico-descricao" data-animation="slide-in-left">
+                    <div class="servico-descricao">
                         <h3>Desenvolvimento de Aplicações Mobile</h3>
                         <p>Potencialize seu negócio com aplicativos móveis intuitivos e poderosos. Do conceito à
                             implementação, criamos soluções personalizadas que colocam sua empresa na palma da mão dos
@@ -150,17 +148,17 @@
                             alcançar novos mercados e fortalecer sua marca. Pronto para levar sua empresa para onde seus
                             clientes estão? Entre em contato e vamos transformar suas ideias em realidade móvel</p>
                     </div>
-                    <div class="servico-imagem" data-animation="slide-in-right">
+                    <div class="servico-imagem">
                         <img src="https://img.freepik.com/free-vector/charity-app-interface-concept_23-2148621297.jpg?t=st=1719241925~exp=1719245525~hmac=69313ea5d1f3fe0e4b632e64c27bfc963f312b56537fdb87f678fae3d27a3040&w=1380"
                             alt="Serviço 2">
                     </div>
                 </div>
-                <div class="servico-item"> 
-                    <div class="servico-imagem" data-animation="slide-in-left">
+                <div class="servico-item">
+                    <div class="servico-imagem">
                         <img src="https://img.freepik.com/free-vector/user-panel-infographic-dashboard-template_23-2148376411.jpg?t=st=1719241989~exp=1719245589~hmac=9e8781fd9407ce818677792310adfd8ff9aac73d7351ec0195ce056040c9807b&w=1380"
                             alt="Serviço 1">
                     </div>
-                    <div class="servico-descricao" data-animation="slide-in-right">
+                    <div class="servico-descricao">
                         <h3>Desenvolvimento de Aplicações Desktop</h3>
                         <p>Construímos aplicações desktop robustas e eficientes que impulsionam a produtividade e
                             melhoram a experiência do usuário. Desde softwares personalizados até sistemas complexos,
@@ -171,7 +169,7 @@
                     </div>
                 </div>
                 <div class="servico-item">
-                    <div class="servico-descricao" data-animation="slide-in-left"> 
+                    <div class="servico-descricao">
                         <h3>Desenvolvimento de Aplicações Web Responsivas</h3>
                         <p>Crie uma presença online dinâmica e acessível com aplicações web responsivas. Nossas soluções
                             não apenas se adaptam a todos os dispositivos, mas também proporcionam uma experiência de
@@ -180,7 +178,7 @@
                             para destacar-se no mercado digital. Entre em contato e vamos transformar suas ideias em
                             realidade digital</p>
                     </div>
-                    <div class="servico-imagem" data-animation="slide-in-right">
+                    <div class="servico-imagem">
                         <img src="https://img.freepik.com/free-vector/realistic-responsive-website-design-collection_23-2149500081.jpg?t=st=1719241919~exp=1719245519~hmac=535f12fe2544f0a51d3a362bac3c93829c224092e5e32f4dbac249e9411ca349&w=1380"
                             alt="Serviço 2">
                     </div>
@@ -197,7 +195,7 @@
         <div class="container">
             <h2 class="fade-in">Clientes</h2>
             <div class="testemunhos-grid">
-                <div class="testemunho-item" data-animation="fade-in">
+                <div class="testemunho-item fade-in">
                     <div class="cliente-foto">
                         <img src="assets/img/logoaesp.png" alt="Cliente Satisfeito">
                     </div>
@@ -205,7 +203,7 @@
                         dedicação e profissionalismo superaram todas as expectativas. Altamente recomendado!."</p>
                     <h3>- Cliente Satisfeito</h3>
                 </div>
-                <div class="testemunho-item" data-animation="fade-in">
+                <div class="testemunho-item fade-in">
                     <div class="cliente-foto">
                         <img src="https://dralessandroanders.netlify.app/assets/img/logo.svg" alt="Cliente Feliz">
                     </div>
@@ -214,13 +212,13 @@
                         Recomendo seus serviços com entusiasmo."</p>
                     <h3>- Cliente Feliz</h3>
                 </div>
-                <div class="testemunho-item" data-animation="fade-in">
+                <!-- <div class="testemunho-item fade-in">
                     <div class="cliente-foto">
-                        <img src="assets/img/estetica-rafaela.PNG" alt="Cliente Grato">
+                        <img src="assets/img/cliente3.jpg" alt="Cliente Grato">
                     </div>
                     <p>"Recomendo fortemente! Entrega rápida, suporte excelente e resultados surpreendentes."</p>
                     <h3>- Cliente Grato</h3>
-                </div>
+                </div> -->
                 <!-- Adicione mais itens de testemunhos conforme necessário -->
             </div>
         </div>
@@ -231,11 +229,9 @@
     <!--  Aqui o cliente poderá entrar em contato comigo -->
     <section id="contato" class="hidden">
         <div class="container">
-            <div data-animation="fade-in">
-                <h2>Contato</h2>
-                <p>Entre em contato comigo através das redes sociais:</p>
-            </div>
-            <div class="redes-sociais" data-animation="fade-in">
+            <h2>Contato</h2>
+            <p>Entre em contato comigo através das redes sociais:</p>
+            <div class="redes-sociais">
                 <a href="https://wa.me/943356283" target="_blank" class="rede-social">
                     <i class="fab fa-whatsapp"></i>
                     WhatsApp
@@ -263,7 +259,7 @@
     <footer>
         <p>&copy; 2024 Estevão Ferreira. Todos os direitos reservados.</p>
     </footer>
-    <script src="assets/scripts/script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

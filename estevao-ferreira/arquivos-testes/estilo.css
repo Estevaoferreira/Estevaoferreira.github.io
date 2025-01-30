@@ -1,0 +1,115 @@
+@import url('../assets/estilos/cascadingstylesheet/menu.css');
+@import url('../assets/estilos/cascadingstylesheet/rodape.css');
+@import url('../assets/estilos/cascadingstylesheet/contato.css');
+@import url('../assets/estilos/cascadingstylesheet/home.css');
+@import url('../assets/estilos/cascadingstylesheet/sobre.css');
+@import url('../assets/estilos/cascadingstylesheet/portfolio.css');
+@import url('../assets/estilos/cascadingstylesheet/servicos.css');
+@import url('../assets/estilos/cascadingstylesheet/testemunhos.css');
+@import url('../assets/estilos/cascadingstylesheet/contato.css');
+
+
+/* Configurações ROOT */
+:root {
+    --primary-color: #00B0D5;
+    --secondary-color: #4160D9;
+    --tertiary-color: #4190D9;
+    --quaternary-color: #41D9C0;
+    --quinary-color: #5341D9;
+    --senary-color: #89B2D9;
+}
+
+/* Reset CSS */
+html {
+    scroll-behavior: smooth;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos Globais */
+
+
+section {
+    text-align: center;
+}
+
+h1,
+h2 {
+    margin-bottom: 1rem;
+}
+/* .hidden{
+    visibility: hidden;
+} */
+.hidden {
+    opacity: 0;
+    transition: opacity 1s ease-out; /* Adicione outras transições, se necessário */
+}
+/* animações com keyframes */
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+   /*  visibility: visible; */
+    animation: fadeIn 1s forwards;
+}
+
+/* Slide-in from left animation */
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.slide-in-left {
+    /* visibility: visible; */
+    animation: slideInLeft 1s forwards;
+}
+
+/* Slide-in from right animation */
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.slide-in-right {
+    /* visibility: visible; */
+    animation: slideInRight 1s forwards;
+}
+
+/* Zoom-in animation */
+@keyframes zoomIn {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.zoom-in {
+    /* visibility: visible; */
+    animation: zoomIn 1s forwards;
+}

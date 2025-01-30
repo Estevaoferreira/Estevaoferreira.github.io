@@ -1,0 +1,66 @@
+@import url('style.css');
+/* Fade-in animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    visibility: visible;
+    animation: fadeIn 1s forwards;
+}
+
+/* Slide-in from left animation */
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.slide-in-left {
+    visibility: visible;
+    animation: slideInLeft 1s forwards;
+}
+
+/* Slide-in from right animation */
+@keyframes slideInRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.slide-in-right {
+    visibility: visible;
+    animation: slideInRight 1s forwards;
+}
+
+/* Zoom-in animation */
+@keyframes zoomIn {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.zoom-in {
+    visibility: visible;
+    animation: zoomIn 1s forwards;
+}
