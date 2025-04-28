@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Meta tags básicas -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título e descrição -->
+    <title>Estevão Ferreira - Portfólio</title>
+    <meta name="description"
+        content="Portfólio de Estevão Ferreira, desenvolvedor web especializado em web design, desenvolvimento de aplicações mobile, desktop e web responsivas.">
+
+    <!-- Palavras-chave -->
+    <meta name="keywords"
+        content="desenvolvedor web, web design, aplicações mobile, aplicações desktop, aplicações web, landing pages, portfólio">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/img/faviconio-logo/favicon-16x16.png" type="image/x-icon">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/6e8500a4fb.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+RO:wght@100..400&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="estilos/cascadingstylesheet/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/aif7tpa.css">
+</head>
+
+
+<body>
+    <!-- Menu tanto desktop quanto mobile -->
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="close menu" role="button" data-animation="aparecer">
+    <label class="close-menu-label" for="close-menu" title="close menu" data-animation="aparecer"></label>
+
+
+        <aside class="menu white-bg">
+            <div class="main-content menu-content">
+                <nav>
+                    <ul onclick="getElementById('close-menu').checked = false;">
+                        <li><a href="#sobre">Informações básicas</a></li>
+                        <li><a href="#portfolio">Trajes</a></li>
+                        <li><a href="#servicos">Assuntos extras</a></li>
+                        <li><a href="#testemunhos">Lista de presentes</a></li>
+                        <li><a href="#contato">Sobre nós</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+
+
+    <!-- Seção onde fica um seja bem vindo e uma foto -->
+    <section id="home">
+        <div class="texto-home" data-animation="slide-in-left">
+            <h1>Queridos padrinhos e madrinhas,</h1>
+            <p>Que alegria ter vocês ao nosso lado nesse momento tão especial! Cada um de vocês faz parte da nossa história e do nosso coração. Escolhemos vocês para estarem conosco nesse dia não apenas para testemunhar nossa união, mas porque são parte fundamental das nossas vidas.Obrigado por aceitarem esse convite cheio de amor. Contar com vocês nesse novo capítulo é um presente!</p>
+        </div>
+        <div class="img-home" data-animation="slide-in-right">
+            <img src="https://github.com/estevaoferreira.png" alt="Foto de Estevão Ferreira o detentor do portfólio.">
+        </div>
+    </section>
+
+    <!-- Seção onde conto sobre mim -->
+    <section id="sobre" class="hidden" >
+        <div class="container" >
+            <div data-animation="slide-in-left">
+                <h2>Informações Básicas</h2>
+            </div>
+            <div class="sobre-content">
+                <div class="sobre-text" data-animation="zoom-in">
+                    <p>
+                        <ul class="lista-info">
+                            <li><strong>Data:</strong>  12 de Outubro de 2025</li>
+                            <li><strong>Horário da cerimônia:</strong> 16h</li>
+                            <li><strong>Local da cerimônia:</strong> Avenida Samuel Martins, 1145 - Jardim do Lago, Jundiaí - SP (Igreja Batista Boas Novas)</li>
+                            <li><strong>Local do jantar:</strong> Rua do Retiro, 2235 - Vila das Hortencias, Jundiaí - SP (Gaúcho Grill e Pizza)</li>
+                        </ul>
+                        Não se esqueçam de chegar com pelo menos 30 minutos de antecedência para que tudo ocorra tranquilamente!
+                    </p>
+                </div>
+                <div class="sobre-img" data-animation="slide-in-right">  
+                    <img src="https://github.com/estevaoferreira.png"
+                        alt="Foto de Estevão Ferreira o detentor do portfólio." data-animation="zoom-in">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção dos meus trabalhos mais recentes -->
+    <section id="portfolio" class="hidden">
+        <div class="container">
+            <div data-animation="zoom-in">
+                <h2>Trajes</h2>
+                <p>Para manter harmonia nas fotos e na cerimônia, pedimos uma atenção especial ao traje:</p>
+            </div>
+            <div class="portfolio-grid">
+                
+                <div class="portfolio-item projeto-um" data-animation="slide-in-left">
+                    <img src="https://images.unsplash.com/photo-1696225928108-ddf64547c53a?q=80&w=2680&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                    <div class="portfolio-info">
+                        <h3>Madrinhas</h3>
+                        <!-- <p><a href="estetica/elaineunhas/index.html" target="_blank">Um porfólio pessoal para estúdio de estética</a></p> -->
+                    </div>
+                </div>
+
+                <div class="portfolio-item projeto-um" data-animation="slide-in-right">
+                    <img src="https://plus.unsplash.com/premium_photo-1664391684871-b5b55b9d8d41?q=80&w=2674&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                    <div class="portfolio-info">
+                        <h3>Paleta de cores</h3>
+                        <!-- <p><a href="estetica/elaineunhas/index.html" target="_blank">Um porfólio pessoal para estúdio de estética</a></p> -->
+                    </div>
+                </div>
+
+                <div class="portfolio-item projeto-um" data-animation="slide-in-left">
+                    <img src="https://images.unsplash.com/photo-1696225928108-ddf64547c53a?q=80&w=2680&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                    <div class="portfolio-info">
+                        <h3>Padrinhos</h3>
+                        <!-- <p><a href="estetica/elaineunhas/index.html" target="_blank">Um porfólio pessoal para estúdio de estética</a></p> -->
+                    </div>
+                </div>
+
+                <div class="portfolio-item projeto-um" data-animation="slide-in-right">
+                    <img src="https://plus.unsplash.com/premium_photo-1664391684871-b5b55b9d8d41?q=80&w=2674&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                    <div class="portfolio-info">
+                        <h3>Paleta de cores</h3>
+                        <!-- <p><a href="estetica/elaineunhas/index.html" target="_blank">Um porfólio pessoal para estúdio de estética</a></p> -->
+                    </div>
+                </div>
+
+                
+                
+                <!-- Adicione mais itens de portfólio conforme necessário -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção que fala os serviços que presto -->
+    <section id="servicos" class="hidden">
+        <div class="container">
+            <div data-animation="fade-in">
+                <h2>----------------</h2>
+            </div>
+            <div class="servicos-grid">
+                <!-- Serviço: Manutenção e Suporte Técnico -->
+                <div class="servico-item">
+                    <div class="servico-imagem" data-animation="slide-in-left">
+                        <img src="https://img.freepik.com/free-vector/computer-troubleshooting-concept-illustration_114360-7616.jpg?t=st=1738208962~exp=1738212562~hmac=162808113c65018726b4a437b4a9ef078fc2ed30f69a3f05bde77fec698464c4&w=826"
+                            alt="Manutenção de Computadores">
+                    </div>
+                    <div class="servico-descricao" data-animation="slide-in-right">
+                        <h3>Assuntos extras</h3>
+                        <p>
+                            <ul>
+                                <li>No dia teremos um(a) mestre de cerimônias que vocês podem produrar em caso de dúvidas</li>
+                                <li>Teremos um local para que vocês possam deixar os celulares durante a cerimônia e aproveitem o máximo do momento</li>
+                                <li>Sobre o jantar: Nosso jantar de comemoração será no restaurante já indicado no site! Valor do buffet livre: R$65 por pessoa (bebidas à parte). Cada um fará seu pagamento diretamente no restaurante. Vai ser uma noite linda e cheia de festa, contamos com vocês!</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+
+    <!-- Aqui é onde temos a seção que os clientes falam o  que acham do meu serviço -->
+    <section id="testemunhos" class="hidden">
+        <div class="container">
+            <h2 class="fade-in">Lista de presentes</h2>
+            <div class="testemunhos-grid">
+                <div class="testemunho-item" data-animation="fade-in">
+                    <p>Para quem desejar nos presentear, criamos uma lista com muito carinho.
+
+                        Ela está disponível no site:
+                        <strong><a href="https://noivos.casar.com/rafaela-e-estevao">Lista de presentes</a></strong>
+                        <br>
+                        Mas queremos deixar bem claro:
+                        A sua presença já é o melhor presente que poderíamos receber!
+                        
+                        Só de estarem conosco nesse momento tão especial, nossos corações estarão mais do que completos. 🎁❤️</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--  Aqui o cliente poderá entrar em contato comigo -->
+    <section id="contato" class="hidden">
+        <div class="container">
+            <div data-animation="fade-in">
+                <h2>Sobre nós</h2>
+            </div>
+            <div class="servicos-grid">
+                <!-- Serviço: Manutenção e Suporte Técnico -->
+                <div class="servico-item">
+                    <div class="servico-imagem" data-animation="slide-in-left">
+                        <img src="https://img.freepik.com/free-vector/computer-troubleshooting-concept-illustration_114360-7616.jpg?t=st=1738208962~exp=1738212562~hmac=162808113c65018726b4a437b4a9ef078fc2ed30f69a3f05bde77fec698464c4&w=826"
+                            alt="Manutenção de Computadores">
+                    </div>
+                    <div class="servico-descricao" data-animation="slide-in-right">
+                        <h3>Rafaela & Estevão</h3>
+                        <p>
+                            Nossa história começou de forma simples, mas cheia da graça de Deus.
+                            Desde aquele primeiro encontro no JUBA, no dia 28/08/2021, até o pedido de casamento em 02/11/2024, temos vivido momentos inesquecíveis, guiados sempre pela oração, pela fé e pelo amor.
+
+                            Agora, caminhamos com alegria para o grande dia: 08/11/2025!
+                            Cada passo até aqui foi cuidado por Deus, e nossa maior alegria é celebrar esse amor com as pessoas que fazem parte da nossa vida.
+
+                            Agradecemos de coração por cada oração, carinho e presença!
+                            Que o Senhor continue sendo o centro da nossa história — e que toda a glória seja sempre d'Ele. Até que Ele venha! ❤️
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <footer>
+        <p>&copy; 2025   Estevão Ferreira. Todos os direitos reservados.</p>
+    </footer>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>

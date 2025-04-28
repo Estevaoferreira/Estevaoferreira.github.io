@@ -1,0 +1,130 @@
+/* @import url('style.css');
+@import url('animacoes.css'); */
+/* Seção Serviços */
+#servicos {
+    background-color: #f0f0f0;
+    padding: 4rem 1rem;
+    text-align: center;
+    color: #333;
+}
+
+#servicos .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+#servicos h2 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+}
+
+.servicos-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+}
+
+.servico-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.servico-imagem img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* transition: transform 0.3s ease-in-out; */
+}
+
+.servico-descricao h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-family: 'Playwrite RO', cursive;
+    font-weight: 100;
+}
+/* 
+.juntor{
+    font-family: 'Times New Roman', Times, serif;
+} */
+
+.servico-descricao p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+
+/* Animações para cada card de serviço */
+/* Filho 1 */
+.servico-item:nth-child(1) .servico-descricao h3, .servico-item:nth-child(1) .servico-descricao p {
+    animation: direitaParaEsquerda 1s ease-in-out;
+}
+.servico-item:nth-child(1) .servico-imagem img {
+    animation: esquerdaParaDireita 1s ease-in-out;
+}
+
+/* Filho 2 */
+.servico-item:nth-child(2) .servico-descricao h3, .servico-item:nth-child(2) .servico-descricao p {
+    animation: esquerdaParaDireita 1.1s ease-in-out;
+}
+.servico-item:nth-child(2) .servico-imagem img {
+    animation: direitaParaEsquerda 1.1s ease-in-out;
+}
+
+/* Filho 3 */
+.servico-item:nth-child(3) .servico-descricao h3, .servico-item:nth-child(3) .servico-descricao p {
+    animation: direitaParaEsquerda 1.2s ease-in-out;
+}
+.servico-item:nth-child(3) .servico-imagem img {
+    animation: esquerdaParaDireita 1.2s ease-in-out;
+}
+
+/* Filho 4 */
+.servico-item:nth-child(4) .servico-descricao h3, .servico-item:nth-child(4) .servico-descricao p {
+    animation: esquerdaParaDireita 1.3s ease-in-out;
+}
+.servico-item:nth-child(4) .servico-imagem img {
+    animation: direitaParaEsquerda 1.3s ease-in-out;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    .servico-item {
+        grid-template-columns: 1fr;
+    }
+
+    .servicos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .servico-item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .servico-imagem {
+        order: 3;
+    }
+
+    .servico-descricao h3 {
+        order: 1;
+    }
+
+    .servico-descricao p {
+        order: 2;
+    }
+
+    .servico-imagem img {
+        max-width: 100%;
+    }
+
+    #servicos h2 {
+        font-size: 2.5rem;
+    }
+}
