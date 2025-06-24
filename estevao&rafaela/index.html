@@ -1,233 +1,163 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-
+<html lang="pt-br">
 <head>
-    <!-- Meta tags básicas -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Título e descrição -->
-    <title>Estevão Ferreira - Portfólio</title>
-    <meta name="description"
-        content="Portfólio de Estevão Ferreira, desenvolvedor web especializado em web design, desenvolvimento de aplicações mobile, desktop e web responsivas.">
-
-    <!-- Palavras-chave -->
-    <meta name="keywords"
-        content="desenvolvedor web, web design, aplicações mobile, aplicações desktop, aplicações web, landing pages, portfólio">
-
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="assets/img/faviconio-logo/favicon-16x16.png" type="image/x-icon">
-
-    <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/6e8500a4fb.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playwrite+RO:wght@100..400&display=swap" rel="stylesheet">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="estilos/cascadingstylesheet/style.css">
-    <link rel="stylesheet" href="https://use.typekit.net/aif7tpa.css">
+    <title>Casamento Rafaela & Estevão</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <!-- Ícones (opcional, mas útil) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-
-
 <body>
-    <!-- Menu tanto desktop quanto mobile -->
-    <input id="close-menu" class="close-menu" type="checkbox" aria-label="close menu" role="button" data-animation="aparecer">
-    <label class="close-menu-label" for="close-menu" title="close menu" data-animation="aparecer"></label>
 
-
-        <aside class="menu white-bg">
-            <div class="main-content menu-content">
-                <nav>
-                    <ul onclick="getElementById('close-menu').checked = false;">
-                        <li><a href="#sobre">Informações básicas</a></li>
-                        <li><a href="#portfolio">Trajes</a></li>
-                        <li><a href="#servicos">Assuntos extras</a></li>
-                        <li><a href="#testemunhos">Lista de presentes</a></li>
-                        <li><a href="#contato">Sobre nós</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </aside>
-
-
-    <!-- Seção onde fica um seja bem vindo e uma foto -->
-    <section id="home">
-        <div class="texto-home" data-animation="slide-in-left">
-            <h1>Queridos padrinhos e madrinhas,</h1>
-            <p>Que alegria ter vocês ao nosso lado nesse momento tão especial! Cada um de vocês faz parte da nossa história e do nosso coração. Escolhemos vocês para estarem conosco nesse dia não apenas para testemunhar nossa união, mas porque são parte fundamental das nossas vidas.Obrigado por aceitarem esse convite cheio de amor. Contar com vocês nesse novo capítulo é um presente!</p>
+    <header class="hero">
+        <div class="video-background">
+            <!-- Seu código iframe ajustado para autoplay e loop (mudo) -->
+            <iframe src="https://www.youtube.com/embed/3KeC_gfOqTU?autoplay=1&mute=1&loop=1&playlist=3KeC_gfOqTU&controls=0&showinfo=0&modestbranding=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
-        <div class="img-home" data-animation="slide-in-right">
-            <img src="https://github.com/estevaoferreira.png" alt="Foto de Estevão Ferreira o detentor do portfólio.">
-        </div>
-    </section>
-
-    <!-- Seção onde conto sobre mim -->
-    <section id="sobre" class="hidden" >
-        <div class="container" >
-            <div data-animation="slide-in-left">
-                <h2>Informações Básicas</h2>
-            </div>
-            <div class="sobre-content">
-                <div class="sobre-text" data-animation="zoom-in">
-                    <p>
-                        <ul class="lista-info">
-                            <li><strong>Data:</strong>  12 de Outubro de 2025</li>
-                            <li><strong>Horário da cerimônia:</strong> 16h</li>
-                            <li><strong>Local da cerimônia:</strong> Avenida Samuel Martins, 1145 - Jardim do Lago, Jundiaí - SP (Igreja Batista Boas Novas)</li>
-                            <li><strong>Local do jantar:</strong> Rua do Retiro, 2235 - Vila das Hortencias, Jundiaí - SP (Gaúcho Grill e Pizza)</li>
-                        </ul>
-                        Não se esqueçam de chegar com pelo menos 30 minutos de antecedência para que tudo ocorra tranquilamente!
-                    </p>
-                </div>
-                <div class="sobre-img" data-animation="slide-in-right">  
-                    <img src="https://github.com/estevaoferreira.png"
-                        alt="Foto de Estevão Ferreira o detentor do portfólio." data-animation="zoom-in">
-                </div>
+        <div class="hero-content">
+            <h1>Rafaela & Estevão</h1>
+            <p>Nosso Grande Dia Está Chegando!</p>
+            <div id="countdown" class="countdown">
+                <!-- O cronômetro será exibido aqui pelo JavaScript -->
             </div>
         </div>
-    </section>
+    </header>
 
-    <!-- Seção dos meus trabalhos mais recentes -->
-    <section id="portfolio" class="hidden">
+    <section class="section padrinhos-message">
         <div class="container">
-            <div data-animation="zoom-in">
-                <h2>Trajes</h2>
-                <p>Para manter harmonia nas fotos e na cerimônia, pedimos uma atenção especial ao traje:</p>
-            </div>
-            <div class="portfolio-grid">
-                
-                <div class="portfolio-item projeto-um" data-animation="slide-in-left">
-                    <img src="https://images.unsplash.com/photo-1696225928108-ddf64547c53a?q=80&w=2680&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
-                    <div class="portfolio-info">
-                        <h3>Madrinhas</h3>
-                        <!-- <p><a href="estetica/elaineunhas/index.html" target="_blank">Um porfólio pessoal para estúdio de estética</a></p> -->
-                    </div>
-                </div>
-
-                <div class="portfolio-item projeto-um" data-animation="slide-in-right">
-                    <img src="https://plus.unsplash.com/premium_photo-1664391684871-b5b55b9d8d41?q=80&w=2674&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
-                    <div class="portfolio-info">
-                        <h3>Paleta de cores</h3>
-                        <!-- <p><a href="estetica/elaineunhas/index.html" target="_blank">Um porfólio pessoal para estúdio de estética</a></p> -->
-                    </div>
-                </div>
-
-                <div class="portfolio-item projeto-um" data-animation="slide-in-left">
-                    <img src="https://images.unsplash.com/photo-1696225928108-ddf64547c53a?q=80&w=2680&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
-                    <div class="portfolio-info">
-                        <h3>Padrinhos</h3>
-                        <!-- <p><a href="estetica/elaineunhas/index.html" target="_blank">Um porfólio pessoal para estúdio de estética</a></p> -->
-                    </div>
-                </div>
-
-                <div class="portfolio-item projeto-um" data-animation="slide-in-right">
-                    <img src="https://plus.unsplash.com/premium_photo-1664391684871-b5b55b9d8d41?q=80&w=2674&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
-                    <div class="portfolio-info">
-                        <h3>Paleta de cores</h3>
-                        <!-- <p><a href="estetica/elaineunhas/index.html" target="_blank">Um porfólio pessoal para estúdio de estética</a></p> -->
-                    </div>
-                </div>
-
-                
-                
-                <!-- Adicione mais itens de portfólio conforme necessário -->
-            </div>
+            <h2>Aos Nossos Padrinhos e Madrinhas</h2>
+            <p>Queridos padrinhos e madrinhas, vocês ocupam um lugar especial em nossos corações e em nossa história. É uma alegria imensa tê-los ao nosso lado como testemunhas e pilares neste novo capítulo de nossas vidas. A confiança e o carinho que depositamos em vocês são imensuráveis, e sabemos que sua presença e apoio farão este dia ainda mais inesquecível. Agradecemos por aceitarem este convite e por caminharem conosco. Estamos radiantes por compartilhar cada momento com vocês!</p>
         </div>
     </section>
 
-    <!-- Seção que fala os serviços que presto -->
-    <section id="servicos" class="hidden">
+    <section class="section madrinhas-attire">
         <div class="container">
-            <div data-animation="fade-in">
-                <h2>----------------</h2>
+            <h2>Instruções para Madrinhas</h2>
+            <p>Para a harmonia visual da cerimônia, pedimos que as madrinhas usem vestidos na paleta de <strong>Azul Serenity</strong> ou <strong>Azul Bebê</strong>. A leveza e suavidade desses tons complementarão a atmosfera que imaginamos para o nosso dia.</p>
+            <div class="attire-gallery">
+                <img src="img/madrinhas 1.jpg" alt="Exemplo de Vestido Azul Serenity">
+                <img src="img/madrinhas 2.jpg" alt="Exemplo de Vestido Azul Bebê">
+                <div class="color-swatch" style="background-color: #B2EBF2;" title="Azul Bebê"></div>
+                <div class="color-swatch" style="background-color: #BBDEFB;" title="Azul Serenity"></div>
             </div>
-            <div class="servicos-grid">
-                <!-- Serviço: Manutenção e Suporte Técnico -->
-                <div class="servico-item">
-                    <div class="servico-imagem" data-animation="slide-in-left">
-                        <img src="https://img.freepik.com/free-vector/computer-troubleshooting-concept-illustration_114360-7616.jpg?t=st=1738208962~exp=1738212562~hmac=162808113c65018726b4a437b4a9ef078fc2ed30f69a3f05bde77fec698464c4&w=826"
-                            alt="Manutenção de Computadores">
-                    </div>
-                    <div class="servico-descricao" data-animation="slide-in-right">
-                        <h3>Assuntos extras</h3>
-                        <p>
-                            <ul>
-                                <li>No dia teremos um(a) mestre de cerimônias que vocês podem produrar em caso de dúvidas</li>
-                                <li>Teremos um local para que vocês possam deixar os celulares durante a cerimônia e aproveitem o máximo do momento</li>
-                                <li>Sobre o jantar: Nosso jantar de comemoração será no restaurante já indicado no site! Valor do buffet livre: R$65 por pessoa (bebidas à parte). Cada um fará seu pagamento diretamente no restaurante. Vai ser uma noite linda e cheia de festa, contamos com vocês!</li>
-                            </ul>
-                        </p>
-                    </div>
-                </div>
-            </div>
+            <p>O modelo do vestido fica a critério de cada uma, buscando sempre o conforto e a elegância. Tecidos leves como seda, chiffon ou crepe são ótimas opções.</p>
         </div>
     </section>
-    
 
-
-
-    <!-- Aqui é onde temos a seção que os clientes falam o  que acham do meu serviço -->
-    <section id="testemunhos" class="hidden">
+    <section class="section padrinhos-attire">
         <div class="container">
-            <h2 class="fade-in">Lista de presentes</h2>
-            <div class="testemunhos-grid">
-                <div class="testemunho-item" data-animation="fade-in">
-                    <p>Para quem desejar nos presentear, criamos uma lista com muito carinho.
-
-                        Ela está disponível no site:
-                        <strong><a href="https://noivos.casar.com/rafaela-e-estevao">Lista de presentes</a></strong>
-                        <br>
-                        Mas queremos deixar bem claro:
-                        A sua presença já é o melhor presente que poderíamos receber!
-                        
-                        Só de estarem conosco nesse momento tão especial, nossos corações estarão mais do que completos. 🎁❤️</p>
-                </div>
-
+            <h2>Instruções para Padrinhos</h2>
+            <p>Para os padrinhos, sugerimos o seguinte traje: terno completo na cor preta (incluindo blazer e calça), camisa social branca e gravata preta. Para completar o visual, os calçados ficam a sua escolha, com sugestão para tons de preto ou branco.</p>
+            <div class="attire-gallery">
+                <img src="img/gravata.jpg" alt="Exemplo de Terno Cinza">
+                <img src="img/padrinhos vertical.jpg" alt="Exemplo de Terno Azul Marinho">
+                <img src="img/padrinhos 3.jpg" alt="Exemplo de Gravata Azul">
+                <img src="img/calca.jpg" alt="Exemplo de Detalhe">
             </div>
         </div>
     </section>
 
-
-
-    <!--  Aqui o cliente poderá entrar em contato comigo -->
-    <section id="contato" class="hidden">
+    <section class="section event-details">
         <div class="container">
-            <div data-animation="fade-in">
-                <h2>Sobre nós</h2>
-            </div>
-            <div class="servicos-grid">
-                <!-- Serviço: Manutenção e Suporte Técnico -->
-                <div class="servico-item">
-                    <div class="servico-imagem" data-animation="slide-in-left">
-                        <img src="https://img.freepik.com/free-vector/computer-troubleshooting-concept-illustration_114360-7616.jpg?t=st=1738208962~exp=1738212562~hmac=162808113c65018726b4a437b4a9ef078fc2ed30f69a3f05bde77fec698464c4&w=826"
-                            alt="Manutenção de Computadores">
-                    </div>
-                    <div class="servico-descricao" data-animation="slide-in-right">
-                        <h3 id="nomenoivos">Rafaela & Estevão</h3>
-                        <p>
-                            Nossa história começou de forma simples, mas cheia da graça de Deus.
-                            Desde aquele primeiro encontro no JUBA, no dia 28/08/2021, até o pedido de casamento em 02/11/2024, temos vivido momentos inesquecíveis, guiados sempre pela oração, pela fé e pelo amor.
+            <h2>Detalhes do Evento</h2>
 
-                            Agora, caminhamos com alegria para o grande dia: 08/11/2025!
-                            Cada passo até aqui foi cuidado por Deus, e nossa maior alegria é celebrar esse amor com as pessoas que fazem parte da nossa vida.
-
-                            Agradecemos de coração por cada oração, carinho e presença!
-                            Que o Senhor continue sendo o centro da nossa história — e que toda a glória seja sempre d'Ele. Até que Ele venha! ❤️
-                        </p>
-                    </div>
+            <div class="detail-block">
+                <h3>Cerimônia</h3>
+                <p><strong>Local:</strong> Igreja Batista Boas Novas</p>
+                <p><strong>Endereço:</strong> Av. Samuel Martins, 1145 - Vila Progresso, Jundiaí - SP, 13202-252</p>
+                <p><strong>Data:</strong> 08 de novembro de 2025</p>
+                <p><strong>Horário:</strong> Início pontualmente às 16h. Padrinhos devem chegar 30 minutos antes.</p>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3668.460984983173!2d-46.88811072505815!3d-23.51868236326074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf25d5833c0c63%3A0xd54f8499c7fa3c5d!2sIBBN%20-%20Igreja%20Batista%20Boas%20Novas!5e0!3m2!1spt-BR!2sbr!4v1719251341667!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
+
+            <div class="detail-block">
+                <h3>Jantar (Opcional)</h3>
+                <p>Após a cerimônia, para aqueles que desejarem e puderem participar, organizaremos um jantar em um restaurante próximo.</p>
+                <p><strong>Local:</strong> Gaúcho Grill e Pizza</p>
+                <p><strong>Endereço:</strong> R. do Retiro, 2235 - Vila das Hortencias, Jundiaí - SP, 13209-355</p>
+                <p><strong>Horário:</strong> O restaurante abre às 18h.</p>
+                <p><strong>Observação:</strong> O jantar será por adesão. Por isso, deixamos livre a opção de participar ou não, pois entendemos que nem todos possam. Agradecemos a compreensão. Atualmente, temos <span id="lugares-jantar">118</span> lugares disponíveis. Se desejar participar, por favor, faça a reserva no link abaixo. O número de lugares pode ser alterado.</p>
+                 <div class="map-container">
+                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3668.423687914474!2d-46.89450582505812!3d-23.52009346331862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf25d415d28c8d%3A0x1133fbe0191a49a3!2sGauch%C3%A3o%20Grill%20e%20Pizza!5e0!3m2!1spt-BR!2sbr!4v1719251398274!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                 </div>
+                <a href="URL_PARA_RESERVAS_RESTAURANTE" class="btn" target="_blank">Fazer Reserva no Restaurante</a>
+            </div>
+
+             <div class="detail-block">
+                <h3>Ensaio da Cerimônia</h3>
+                <p>Teremos um ensaio da cerimônia para os padrinhos e familiares próximos.</p>
+                <p><strong>Data:</strong> A ser confirmada</p>
+                <p><strong>Horário:</strong> A ser confirmado </p>
+                <p><strong>Local:</strong> Mesmo local da cerimônia</p>
+            </div>
+
         </div>
     </section>
 
 
+        <section class="section guests-instructions">
+        <div class="container">
+            <h2>Informações para Convidados</h2>
+            <p>Prezados convidados, preparem-se para celebrar o amor conosco! Abaixo, algumas informações úteis para o dia:</p>
+            <ul>
+                <li><strong>Traje:</strong> Sugerimos traje social ou passeio completo. Pedimos, por gentileza, que evitem as cores [Cor das Madrinhas] e [Cor dos Padrinhos] para harmonizar com o cortejo.</li>
+                <li><strong>Chegada:</strong> Pedimos a gentileza de chegarem com pelo menos 15 minutos de antecedência ao local da cerimônia, pois iniciaremos pontualmente às 16h.</li>
+                <li><strong>Estacionamento:</strong> A igreja não possui estacionamento próprio. Será necessário procurar vagas nas ruas próximas.</li>
+                <li><strong>Hashtag:</strong> Ao compartilhar fotos nas redes sociais, usem a hashtag oficial do casamento: <strong>#CasamentoRafaelaEstevao</strong> (ou a hashtag que vocês escolherem).</li>
+            </ul>
+            <p>Sua presença é o nosso maior presente. Mal podemos esperar para compartilhar este momento com todos!</p>
+        </div>
+    </section>
+
+
+        <section class="section gift-list">
+        <div class="container">
+            <h2>Lista de Presentes</h2>
+            <p>A maior alegria é ter a presença de vocês neste dia tão especial! Para aqueles que desejam nos presentear, disponibilizamos nossa lista.</p>
+            <a href="https://www.finalfeliz.de/rafela-estevao" class="btn" target="_blank">Ver Lista de Presentes</a>
+        </div>
+    </section>
 
 
     <footer>
-        <p>&copy; 2025   Estevão Ferreira. Todos os direitos reservados.</p>
+        <div class="container">
+            <p>&copy; 2025 Rafaela & Estevão. Todos os direitos reservados.</p>
+        </div>
     </footer>
-    <script src="scripts/script.js"></script>
-</body>
 
+    <script>
+        // JavaScript para o cronômetro
+        const countdownElement = document.getElementById('countdown');
+        const weddingDate = new Date('November 8, 2025 00:00:00').getTime(); // Defina a data e hora do casamento
+
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const distance = weddingDate - now;
+
+            if (distance < 0) {
+                countdownElement.innerHTML = "O GRANDE DIA CHEGOU!";
+                clearInterval(countdownInterval);
+                return;
+            }
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            countdownElement.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+        }
+
+        // Atualiza o cronômetro a cada segundo
+        const countdownInterval = setInterval(updateCountdown, 1000);
+
+        // Chama a função uma vez imediatamente para evitar delay inicial
+        updateCountdown();
+    </script>
+
+</body>
 </html>
