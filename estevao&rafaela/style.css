@@ -383,3 +383,161 @@ footer {
         height: 200px; /* Even smaller height on very small screens */
     }
 }
+/* Adicione estas regras ao seu arquivo style.css */
+
+/* Optional: Style for a smaller hero section on the reservation page */
+.hero.small-hero {
+    height: 50vh; /* Adjust height as needed */
+    min-height: 300px; /* Minimum height */
+}
+
+.hero.small-hero .hero-content h1 {
+    font-size: 3em; /* Adjust font size */
+}
+
+.hero.small-hero .hero-content p {
+    font-size: 1.2em; /* Adjust font size */
+}
+
+
+/* Styles for the reservation form section */
+.reservation-form .container {
+    text-align: center; /* Centraliza o conteúdo principal */
+    max-width: 600px; /* Limita a largura do formulário para melhor visual */
+    margin: 0 auto;
+}
+
+.reservation-form p {
+    margin-bottom: 20px;
+    line-height: 1.7;
+    color: var(--text-color);
+}
+
+.reservation-form .available-spots {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: var(--heading-color);
+}
+
+.reservation-form form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: left; /* Alinha os elementos do formulário à esquerda dentro do container */
+    margin-bottom: 20px; /* Espaço abaixo do formulário */
+}
+
+.reservation-form .form-group {
+    margin-bottom: 20px; /* Espaço entre os grupos de formulário */
+}
+
+.reservation-form label {
+    display: block; /* Faz o label ocupar toda a largura */
+    margin-bottom: 8px; /* Espaço abaixo do label */
+    font-weight: bold;
+    color: var(--heading-color);
+}
+
+.reservation-form input[type="text"],
+.reservation-form input[type="number"],
+.reservation-form input[type="email"] {
+    width: 100%; /* Inputs ocupam a largura total do container */
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+}
+
+.reservation-form .checkbox-group {
+    display: flex; /* Alinha o checkbox e o label na mesma linha */
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.reservation-form .checkbox-group input[type="checkbox"] {
+    margin-right: 10px; /* Espaço entre o checkbox e o label */
+    width: auto; /* Override width: 100% for checkboxes */
+}
+
+.reservation-form .checkbox-group label {
+    margin-bottom: 0; /* Remove margin-bottom do label no grupo checkbox */
+    font-weight: normal; /* Label do checkbox geralmente não é bold */
+    color: var(--text-color);
+}
+
+.reservation-form .btn {
+    display: block; /* Faz o botão ocupar a largura total do formulário */
+    width: 100%;
+    margin-top: 10px; /* Espaço acima do botão */
+    padding: 15px; /* Ajusta o padding para um botão full-width */
+    font-size: 1.2em; /* Aumenta um pouco o tamanho da fonte do botão */
+}
+
+.reservation-form .reservation-note {
+    font-size: 0.9em;
+    color: #777;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center; /* Centraliza a nota */
+}
+
+/* Style for form messages (success/error) */
+.form-message {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: bold;
+    min-height: 1.2em; /* Garante um espaço mínimo mesmo vazio */
+}
+
+.form-message.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.form-message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+
+/* Responsive adjustments for the form */
+@media (max-width: 480px) {
+    .reservation-form form {
+        padding: 20px;
+    }
+
+    .reservation-form .form-group {
+        margin-bottom: 15px;
+    }
+
+    .reservation-form label {
+        margin-bottom: 5px;
+    }
+
+    .reservation-form input[type="text"],
+    .reservation-form input[type="number"],
+    .reservation-form input[type="email"] {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+
+    .reservation-form .btn {
+        padding: 12px;
+        font-size: 1em;
+    }
+}
+/* Adicione ao seu style.css, se desejar */
+.reservation-form #convidados-nomes-container p {
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    text-align: left;
+    color: var(--heading-color); /* Usa a cor de título definida */
+}

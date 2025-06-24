@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmar Presença - Jantar</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link para o seu arquivo CSS -->
+    <style>
+        /* Estilos básicos para o formulário, pode mover para style.css */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Alinha ao topo */
+            min-height: 100vh;
+        }
+
+        .container {
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+        }
+
+        h1 {
+            color: #5a3e5a; /* Cor que combine com o tema */
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="number"],
+        .form-group input[type="email"],
+        .form-group input[type="tel"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box; /* Inclui padding e borda no tamanho total */
+        }
+
+         .form-group input[type="number"] {
+             /* Remover setas do input number em alguns navegadores */
+            -moz-appearance: textfield;
+         }
+         .form-group input[type="number"]::-webkit-outer-spin-button,
+         .form-group input[type="number"]::-webkit-inner-spin-button {
+             -webkit-appearance: none;
+             margin: 0;
+         }
+
+
+        .form-group input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        button {
+            background-color: #5a3e5a; /* Cor principal */
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #7a5e7a; /* Cor mais clara no hover */
+        }
+
+        button:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+
+        .form-message {
+            margin-top: 20px;
+            padding: 10px;
+            border-radius: 4px;
+            text-align: center;
+        }
+
+        .form-message.success {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+
+        .form-message.error {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+
+        .form-message.warning {
+             background-color: #fff3cd;
+             color: #856404;
+             border: 1px solid #ffeeba;
+        }
+
+        #convidados-nomes-container {
+            margin-top: 20px;
+            padding-top: 15px;
+            border-top: 1px solid #eee;
+        }
+
+         #convidados-nomes-container .form-group {
+             margin-bottom: 10px; /* Menos espaço entre campos de convidados */
+         }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Confirmar Presença no Jantar</h1>
+        <p>Por favor, preencha os dados para confirmar sua presença e a de seus convidados.</p>
+
+        <form id="jantar-reservation-form">
+            <div class="form-group">
+                <label for="nome_principal">Seu Nome Completo:</label>
+                <input type="text" id="nome_principal" name="nome_principal" required>
+            </div>
+
+            <div class="form-group">
+                <label for="quantidade">Quantas pessoas (incluindo você)?</label>
+                <input type="number" id="quantidade" name="quantidade" min="1" value="1" required>
+            </div>
+
+            <!-- Este div será preenchido dinamicamente com campos para nomes de convidados -->
+            <div id="convidados-nomes-container">
+                <!-- Campos para convidados adicionais serão adicionados aqui pelo JS -->
+            </div>
+
+            <div class="form-group">
+                <label for="telefone">Número de Telefone (Opcional, para contato):</label>
+                <input type="tel" id="telefone" name="telefone">
+            </div>
+
+            <div class="form-group" style="text-align: center;">
+                 <input type="checkbox" id="confirmacao" name="confirmacao" required>
+                 <label for="confirmacao" style="display: inline-block; font-weight: normal;">Confirmo os dados acima.</label>
+            </div>
+
+
+            <button type="submit">Enviar Confirmação via WhatsApp</button>
+
+            <div id="form-message" class="form-message"></div>
+        </form>
+    </div>
+
+    <script src="reserva.js"></script> <!-- Link para o seu arquivo JavaScript -->
+</body>
+</html>
