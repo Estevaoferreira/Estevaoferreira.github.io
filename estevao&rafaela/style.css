@@ -541,3 +541,63 @@ footer {
     text-align: left;
     color: var(--heading-color); /* Usa a cor de título definida */
 }
+/* Estilos para a seção Sobre Nós */
+.about-us-content {
+    display: flex; /* Usa Flexbox para criar as colunas */
+    flex-wrap: wrap; /* Permite que as colunas quebrem para linha única em telas pequenas */
+    gap: 30px; /* Espaço entre as colunas */
+    align-items: center; /* Alinha verticalmente o conteúdo no centro */
+}
+
+.about-us-image,
+.about-us-text {
+    flex: 1; /* Permite que cada coluna ocupe o espaço disponível */
+    min-width: 300px; /* Define uma largura mínima antes de quebrar para a próxima linha */
+}
+
+.about-us-image img {
+    display: block; /* Remove espaço extra abaixo da imagem */
+    max-width: 100%; /* Garante que a imagem seja responsiva e não ultrapasse o contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 8px; /* Bordas arredondadas para um visual mais suave */
+    margin-bottom: 15px; /* Espaço entre imagens se usar mini galeria */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Se usar múltiplas imagens e quiser um layout específico na coluna de imagem */
+.about-us-image {
+    display: flex; /* Usa flexbox para as imagens dentro da coluna */
+    flex-direction: column; /* Empilha as imagens verticalmente */
+    gap: 15px; /* Espaço entre as imagens empilhadas */
+}
+
+
+.about-us-text h2 {
+    color: #5a3e5a; /* Cor do título */
+    margin-top: 0; /* Remove margem superior padrão */
+    margin-bottom: 15px;
+    text-align: left; /* Alinha o título à esquerda */
+}
+
+.about-us-text p {
+    margin-bottom: 15px; /* Espaço entre parágrafos */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+    .about-us-content {
+        flex-direction: column; /* Empilha as colunas verticalmente em telas menores */
+        gap: 20px; /* Ajusta o espaço quando empilhado */
+    }
+
+    .about-us-image,
+    .about-us-text {
+        min-width: 100%; /* Ocupa a largura total em telas pequenas */
+    }
+
+     .about-us-text h2,
+     .about-us-text p {
+         text-align: center; /* Centraliza o texto e título em telas pequenas, opcional */
+     }
+}
